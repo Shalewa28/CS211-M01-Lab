@@ -33,3 +33,21 @@ Display the total order amount to the customer
 Display a thank you message
 END
 """
+menu = { 
+    1: {"name": "Burger", "price": 7}, 
+    2: {"name": "Hotdog", "price": 3}, 
+    3: {"name": "Drink", "price": 2},
+    4: {"name": "Cake", "price": 5},
+    5: {"name": "Pizza Slide", "price" : 5},
+}
+# Variable to hold/store total order cost 
+total_order_cost = 0
+
+# print welcome message to the user
+name = input ("Hello, what's your name? \n")
+print ("welcome" + name + "," "This is the cafe!")
+
+while True: 
+    print("\nMenu: ")
+    # Get item number that custumer wants to order
+    # Using try/except to handle invalid inputs
